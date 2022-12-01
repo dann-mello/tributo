@@ -7,7 +7,7 @@
 }
 
 div#banner {
-    background-image: url('../images/chorao.png');
+background-color: #000;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -62,6 +62,7 @@ nav li a:hover{
     justify-content: center;
     align-items: end;
     flex-direction: column;
+    color: #fff;
 }
 
 .first-name {
@@ -75,8 +76,16 @@ nav li a:hover{
 
 .first-name,
 .last-name {
-    color: #fff;
+    
     text-shadow: 2px 1px 2px rgb(94, 94, 94);
+}
+
+.descricao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 13px;
 }
 
 .botao-guia {
@@ -102,7 +111,7 @@ nav li a:hover{
     color: #000;
 }
 
-section#about{
+section#pensament{
     background-color: rgba(185, 185, 185, 0.356);
     height: 50vh;
     display: flex;
@@ -113,12 +122,69 @@ section#about{
     flex-direction: row;
 }
 
-.corp-text-about{
+.corp-text-pensament{
     flex: 1;
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 45px;
+    text-align: center;
 }
 
-.corp-img-about{
-    flex: 1;
-    background-color: red;
+.text-pensament cite{
+    font-size: 27px;
 }
+
+.corp-img-pensament{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+figure img {
+    width: 300px;
+    box-shadow: 2px 3px 2px #5c5c5c;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-about,
+.table-about{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 10px 10px;
+}
+
+
+.img-about img{
+    width: 350px;
+    box-shadow: 2px 3px 2px #5c5c5c;
+}
+
+.info {
+    display: flex;
+    justify-content: end;
+}
+
+.info a {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.info a:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
