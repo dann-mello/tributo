@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#banner {
+    background-image: url('../images/chorao.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+}
+
+.container {
+    width: 998px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#navegacao {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul, 
+nav li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+nav li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.title-principal {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+
+.first-name {
+    font-size: 72px;
+
+}
+
+.last-name {
+    font-size: 50px;
+}
+
+.first-name,
+.last-name {
+    color: #fff;
+    text-shadow: 2px 1px 2px rgb(94, 94, 94);
+}
+
+.botao-guia {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.botao-guia a {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.botao-guia a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+section#about{
+    background-color: rgba(185, 185, 185, 0.356);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.corp-text-about{
+    flex: 1;
+    background-color: aqua;
+}
+
+.corp-img-about{
+    flex: 1;
+    background-color: red;
+}
