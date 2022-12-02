@@ -118,9 +118,10 @@ nav li a:hover {
 
 section#pensament {
     background-color: rgba(185, 185, 185, 0.356);
-    height: 50vh;
+    height: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .row {
@@ -206,7 +207,7 @@ section#galery {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-width: 998px;
+    margin-top: 10px;
 }
 
 .galery-img {
@@ -233,11 +234,111 @@ footer {
     text-align: center;
 }
 
-.direitos a{
+.direitos a {
     text-decoration: underline;
     color: #fff;
 }
 
-.direitos a:hover{
+.direitos a:hover {
     color: #5c5c5c;
+}
+
+@media (max-width:1024px) {
+    .title-principal {
+        align-items: center;
+
+    }
+}
+
+@media (max-width:1000px) {
+    .container {
+        width: 700px;
+    }
+}
+
+@media (max-width:700px) {
+    .corp-img-pensament {
+        justify-content: center;
+    }
+
+    section#pensament .container {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 500px;
+    }
+
+    .first-name {
+        font-size: 52px;
+    }
+
+    .last-name {
+        font-size: 30px;
+    }
+
+    .corp-text-pensament {
+        font-size: 25px;
+    }
+
+    figure img {
+        width: 200px;
+    }
+
+    .img-about img {
+        width: 250px;
+    }
+
+    .table-about {
+        width: 100%;
+        height: auto;
+    }
+
+    .galery-img {
+        width: 200px;
+        min-width: 100px;
+    }
+}
+
+@media (max-width:550px) {
+    #navegacao {
+        justify-content: center;
+    }
+
+    table {
+        height: auto;
+        margin: 20px;
+    }
+
+    .table-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#pensament .container {
+        margin: 20px;
+    }
+
+    .corp-galery {
+        margin: 5px;
+    }
+
+    .descricao {
+        display: none;
+    }
+}
+
+@media (max-width:500px){
+    .container{
+        width: auto;
+    }
+}
+
+@media (max-width:410px){
+    .corp-galery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
